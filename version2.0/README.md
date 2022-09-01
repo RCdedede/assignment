@@ -10,7 +10,7 @@ task manager is to add task in to a task queue
 (this task manager is in memory)
 
 ## Basic usage
-### task
+### task.py
 `key()` 
 - task unique id/pid
 `todict()` 
@@ -19,7 +19,7 @@ task manager is to add task in to a task queue
 - create a task with all parameters 
 - example: `{'pid': '532347c9-06f1-4cdd-833c-4d29dacfb7f6', 'task_priority': 0, 'methods': 0, 'started_time': '2022-09-01T17:17:59Z', 'goup': 'None'}`
 
-## queue
+## queue.py
 `q_len()` 
 - get the length of queue
 `is_empty()` 
@@ -39,7 +39,7 @@ task manager is to add task in to a task queue
 `kill`
 - kill a task
 
-## worker
+## worker.py
 3 functions:
 `add()`
 - add a task based on user choice of methods
@@ -48,7 +48,7 @@ task manager is to add task in to a task queue
 `kill(task)`
 - the same as `kill()` in the queue.py
 
-## main
+## main.py
 - user is able to trigger the function based on user choice
 `python3 main.py -p -m -g`
 - example of return `{'pid': '9feef417-ca6b-4125-883a-a9ae80d3370f', 'task_priority': 0, 'methods': 'fifo', 'started_time': '2022-09-01T18:40:34Z', 'goup': 'None'}`
