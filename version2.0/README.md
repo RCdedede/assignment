@@ -65,7 +65,9 @@ task manager is to add task in to a task queue
 ### main.py
 - user is able to trigger the function based on user choice
 
-`python3 main.py -p -m -g`
+```sh
+python3 main.py -p -m -g
+```
 - example of return `{'pid': '9feef417-ca6b-4125-883a-a9ae80d3370f', 'task_priority': 0, 'methods': 'fifo', 'started_time': '2022-09-01T18:40:34Z', 'goup': 'None'}`
 
 ##unnitest
