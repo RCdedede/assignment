@@ -6,7 +6,8 @@ task manager is to add task in to a task queue
 
 ## pre-request
 - python 3.x
-(this task manager is in memory for temporary)
+
+(this task manager is in memory)
 
 ## Basic usage
 ### task
