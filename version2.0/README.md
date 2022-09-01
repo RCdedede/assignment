@@ -52,6 +52,7 @@ task manager is to add task in to a task queue
 
 ### worker.py
 3 functions:
+
 `add()`
 - add a task based on user choice of methods
 
@@ -69,5 +70,5 @@ task manager is to add task in to a task queue
 
 ##unnitest
 ## test_task.py and test.queue.py
-- test_task.py for Task() functions testing
-- test.queue.py for Queue() functions testing
+- test_task.py for `Task()` functions testing
+- test.queue.py for `Queue()` functions testing
