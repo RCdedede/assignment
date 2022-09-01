@@ -25,12 +25,14 @@ class Queue():
         else:
             self.q.append(task)
 
-    #def fifo_pop(self):
-        #return self.q.pop(0)
+    def fifo_pop(self):
+        if not self.is_empty():
+            return self.q.pop(0)
 
     def priority_pop(self):
-        new_q = sorted(self.q,key=lambda i:(i['task_priority'],i['started_time']))
-        return new_q.pop(0)
+        if not self.is_empty():
+            new_q = sorted(self.q,key=lambda i:(i['task_priority'],i['started_time']))
+            return new_q.pop(0)
 
     def priority_add(self,task):
         if self.is_empty() or not self.is_max():
